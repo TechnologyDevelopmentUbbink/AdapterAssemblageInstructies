@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101419">
+  <meta name="description" content="Snelle operatorhulp voor storingen en veelvoorkomende situaties aan de machine.">
+  <title>Machine Hulp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <div>
+        <p class="eyebrow">UBBINK • OPERATOR SUPPORT</p>
+        <h1>Machine Hulp</h1>
+        <p class="intro">
+          Kies wat je ziet. Volg daarna rustig de stappen en bekijk de korte instructievideo.
+        </p>
+      </div>
+
+      <div class="status-note" aria-label="Veiligheidsmelding">
+        <span class="status-dot"></span>
+        <span>Werk veilig en volg altijd de machine-instructies.</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="section-heading">
+      <div>
+        <p class="eyebrow">SNELLE HULP</p>
+        <h2>Wat is er aan de hand?</h2>
+      </div>
+      <p class="section-copy">
+        Tik op een tegel voor uitleg en video.
+      </p>
+    </section>
+
+    <section class="tile-grid" id="helpGrid" aria-label="Storingen en instructies">
+
+      <button class="help-tile" type="button"
+        data-title="Rode lamp bij start"
+        data-duration="< 1 minuut"
+        data-description="Controleer of alle producten volledig in de mal zitten en of de veiligheidszone vrij is."
+        data-steps="Controleer of alle producten volledig in de mal zitten.|Controleer of de deur volledig gesloten is.|Druk op RESET.|Druk daarna opnieuw op START."
+        data-video="videos/rode-lamp-start.mp4">
+        <span class="tile-icon tile-icon--danger">!</span>
+        <span class="tile-content">
+          <span class="tile-meta">STORING • &lt; 1 MIN</span>
+          <span class="tile-title">Rode lamp bij start</span>
+          <span class="tile-text">Product of veiligheidsvoorwaarde blokkeert de start.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="Machine start niet"
+        data-duration="1–2 minuten"
+        data-description="De machine staat gereed, maar start niet na het indrukken van START."
+        data-steps="Controleer de noodstoppen.|Controleer of alle deuren dicht zijn.|Controleer de melding op het HMI.|Voer indien toegestaan een reset uit."
+        data-video="videos/machine-start-niet.mp4">
+        <span class="tile-icon">▶</span>
+        <span class="tile-content">
+          <span class="tile-meta">STARTPROBLEEM • 1–2 MIN</span>
+          <span class="tile-title">Machine start niet</span>
+          <span class="tile-text">Basiscontroles voordat je opnieuw probeert te starten.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="Product niet goed in mal"
+        data-duration="< 1 minuut"
+        data-description="Een product ligt scheef, steekt uit of is niet volledig aangedrukt."
+        data-steps="Stop de cyclus volgens de normale procedure.|Open de deur pas wanneer dit veilig is.|Plaats het product volledig in de mal.|Sluit de deur en reset de machine."
+        data-video="videos/product-niet-in-mal.mp4">
+        <span class="tile-icon">▣</span>
+        <span class="tile-content">
+          <span class="tile-meta">PRODUCT • &lt; 1 MIN</span>
+          <span class="tile-title">Product niet goed in mal</span>
+          <span class="tile-text">Zo controleer en corrigeer je de productpositie.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="Robot staat stil"
+        data-duration="2 minuten"
+        data-description="De robot beweegt niet verder tijdens de cyclus."
+        data-steps="Lees eerst de melding op het HMI.|Controleer of de robot op een veilige positie staat.|Controleer de bijbehorende sensor- of productmelding.|Reset alleen volgens de instructie in de video."
+        data-video="videos/robot-staat-stil.mp4">
+        <span class="tile-icon">R</span>
+        <span class="tile-content">
+          <span class="tile-meta">ROBOT • ± 2 MIN</span>
+          <span class="tile-title">Robot staat stil</span>
+          <span class="tile-text">Controleer melding, positie en voorwaarden voor herstel.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="Productaanvoer gestopt"
+        data-duration="1–3 minuten"
+        data-description="Er komen geen nieuwe producten vanuit de aanvoer naar de machine."
+        data-steps="Controleer of er voldoende product aanwezig is.|Controleer de trilgoot en overgangspunten.|Verwijder alleen blokkades volgens de veilige werkwijze.|Start de aanvoer opnieuw."
+        data-video="videos/productaanvoer-gestopt.mp4">
+        <span class="tile-icon">≈</span>
+        <span class="tile-content">
+          <span class="tile-meta">AANVOER • 1–3 MIN</span>
+          <span class="tile-title">Productaanvoer gestopt</span>
+          <span class="tile-text">Geen onderdelen meer vanuit tumbler of trilgoot.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="Vision fout"
+        data-duration="1–2 minuten"
+        data-description="De camera accepteert het product niet of geeft herhaaldelijk een fout."
+        data-steps="Controleer of het product correct ligt.|Controleer of de camera vrij zicht heeft.|Controleer op vuil of reflectie in het cameragebied.|Voer de normale retry/reset uit."
+        data-video="videos/vision-fout.mp4">
+        <span class="tile-icon">◎</span>
+        <span class="tile-content">
+          <span class="tile-meta">VISION • 1–2 MIN</span>
+          <span class="tile-title">Vision fout</span>
+          <span class="tile-text">Camera ziet of accepteert het product niet.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="Deur / safety fout"
+        data-duration="< 1 minuut"
+        data-description="Een veiligheidsdeur of safety-signaal voorkomt vrijgave van de machine."
+        data-steps="Controleer of alle deuren volledig gesloten zijn.|Controleer of niets tussen deur en frame zit.|Controleer de melding op het HMI.|Reset daarna de safety volgens de normale procedure."
+        data-video="videos/deur-safety-fout.mp4">
+        <span class="tile-icon">⌑</span>
+        <span class="tile-content">
+          <span class="tile-meta">SAFETY • &lt; 1 MIN</span>
+          <span class="tile-title">Deur / safety fout</span>
+          <span class="tile-text">Machine krijgt geen veilige vrijgave.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="Reset na storing"
+        data-duration="< 1 minuut"
+        data-description="De oorzaak is opgelost en de machine moet gecontroleerd opnieuw worden vrijgegeven."
+        data-steps="Controleer of de storing daadwerkelijk is opgelost.|Controleer of niemand zich in de machinezone bevindt.|Druk op RESET.|Controleer de status en start daarna pas opnieuw."
+        data-video="videos/reset-na-storing.mp4">
+        <span class="tile-icon">↻</span>
+        <span class="tile-content">
+          <span class="tile-meta">RESET • &lt; 1 MIN</span>
+          <span class="tile-title">Reset na storing</span>
+          <span class="tile-text">Veilige standaardvolgorde voor opnieuw vrijgeven.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="Sensor blijft actief"
+        data-duration="1–2 minuten"
+        data-description="Een 24V sensor blijft bezet of verandert niet mee met de werkelijke situatie."
+        data-steps="Bekijk op het HMI welke sensor wordt gemeld.|Controleer of er fysiek nog een product aanwezig is.|Controleer sensorvlak en mechanische positie.|Escaleren als de sensorstatus niet logisch verandert."
+        data-video="videos/sensor-blijft-actief.mp4">
+        <span class="tile-icon">●</span>
+        <span class="tile-content">
+          <span class="tile-meta">SENSOR • 1–2 MIN</span>
+          <span class="tile-title">Sensor blijft actief</span>
+          <span class="tile-text">Een detectie blijft hangen of klopt niet met de situatie.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button class="help-tile" type="button"
+        data-title="HMI toont een foutmelding"
+        data-duration="1–3 minuten"
+        data-description="Er staat een foutmelding op het scherm en je weet niet direct welke handeling nodig is."
+        data-steps="Lees de volledige fouttekst.|Noteer indien aanwezig het foutnummer.|Controleer welk onderdeel wordt genoemd.|Volg de bijbehorende herstelstappen in de video."
+        data-video="videos/hmi-foutmelding.mp4">
+        <span class="tile-icon">▤</span>
+        <span class="tile-content">
+          <span class="tile-meta">HMI • 1–3 MIN</span>
+          <span class="tile-title">HMI toont een foutmelding</span>
+          <span class="tile-text">Zo lees je de melding en bepaal je de volgende stap.</span>
+        </span>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </button>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>Technology Development • Operator Support</span>
+      <span>Versie 0.1</span>
+    </div>
+  </footer>
+
+  <dialog class="help-dialog" id="helpDialog">
+    <div class="dialog-card">
+      <button class="dialog-close" id="closeDialog" type="button" aria-label="Sluiten">×</button>
+
+      <div class="dialog-copy">
+        <p class="eyebrow" id="dialogDuration">INSTRUCTIE</p>
+        <h2 id="dialogTitle">Titel</h2>
+        <p id="dialogDescription"></p>
+
+        <ol class="steps" id="dialogSteps"></ol>
+      </div>
+
+      <div class="video-wrap">
+        <video id="instructionVideo" controls playsinline preload="metadata">
+          Je browser ondersteunt deze video niet.
+        </video>
+        <div class="video-placeholder" id="videoPlaceholder">
+          <strong>Dummy video</strong>
+          <span>Zet straks het juiste MP4-bestand in de map <code>/videos</code>.</span>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
