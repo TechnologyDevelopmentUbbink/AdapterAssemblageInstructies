@@ -100,7 +100,7 @@ const helpItems = [
   },
   {
     index: 10,
-    title: "System fout",
+    title: "Systeem fout",
     meta: "SYSTEM",
     duration: "1–3 minuten",
     description: "Algemene systeemfout.",
