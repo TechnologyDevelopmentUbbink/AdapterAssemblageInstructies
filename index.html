@@ -38,7 +38,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <span>Technology Development • Operator Support</span>
-      <span>Versie 0.2</span>
+      <span>Versie 0.3</span>
     </div>
   </footer>
 
@@ -46,20 +46,22 @@
     <div class="dialog-card">
       <button class="dialog-close" id="closeDialog" type="button" aria-label="Sluiten">×</button>
 
-      <div class="dialog-copy">
-        <p class="eyebrow" id="dialogDuration">INSTRUCTIE</p>
-        <h2 id="dialogTitle">Titel</h2>
-        <p id="dialogDescription"></p>
-        <ol class="steps" id="dialogSteps"></ol>
-      </div>
+      <div class="dialog-layout">
+        <div class="dialog-copy">
+          <p class="eyebrow" id="dialogDuration">INSTRUCTIE</p>
+          <h2 id="dialogTitle">Titel</h2>
+          <p id="dialogDescription"></p>
+          <ol class="steps" id="dialogSteps"></ol>
+        </div>
 
-      <div class="video-wrap">
-        <video id="instructionVideo" controls playsinline preload="metadata">
-          Je browser ondersteunt deze video niet.
-        </video>
-        <div class="video-placeholder" id="videoPlaceholder">
-          <strong>Dummy video</strong>
-          <span>Zet straks het juiste MP4-bestand in de map <code>/videos</code>.</span>
+        <div class="video-wrap">
+          <video id="instructionVideo" controls playsinline preload="metadata">
+            Je browser ondersteunt deze video niet.
+          </video>
+          <div class="video-placeholder" id="videoPlaceholder">
+            <strong>Dummy video</strong>
+            <span>Zet straks het juiste MP4-bestand in de map <code>/videos</code>.</span>
+          </div>
         </div>
       </div>
     </div>
