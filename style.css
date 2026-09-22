@@ -49,9 +49,9 @@ main { padding: 46px 0 70px; }
 .help-dialog { width: min(1080px, calc(100% - 30px)); max-height: calc(100dvh - 30px); padding: 0; border: 1px solid var(--line-strong); border-radius: 22px; background: #12171d; color: var(--text); box-shadow: 0 30px 90px rgba(0, 0, 0, 0.58); overflow: auto; }
 .help-dialog::backdrop { background: rgba(3, 6, 9, 0.78); backdrop-filter: blur(4px); }
 .dialog-card { position: relative; padding: 32px; }
-.dialog-close { position: sticky; z-index: 3; top: 14px; float: right; display: grid; place-items: center; width: 44px; height: 44px; margin: -12px -10px 0 12px; border: 1px solid var(--line); border-radius: 50%; background: #191f26; color: var(--muted); font-size: 1.7rem; line-height: 1; cursor: pointer; }
+.dialog-close { position: absolute; z-index: 3; top: 14px; right: 14px; display: grid; place-items: center; width: 44px; height: 44px; margin: 0; border: 1px solid var(--line); border-radius: 50%; background: #191f26; color: var(--muted); font-size: 1.7rem; line-height: 1; cursor: pointer; }
 .dialog-close:hover { color: var(--text); border-color: var(--line-strong); }
-.dialog-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 42%); align-items: start; gap: clamp(24px, 4vw, 48px); }
+.dialog-layout { display: grid; width: 100%; clear: both; grid-template-columns: minmax(0, 1fr) minmax(280px, 42%); align-items: start; gap: clamp(24px, 4vw, 48px); }
 .dialog-copy { min-width: 0; padding: 8px 0 0; }
 .dialog-copy > p:not(.eyebrow) { max-width: 680px; margin-top: 14px; color: var(--muted); line-height: 1.6; }
 .steps { display: grid; gap: 10px; margin: 24px 0 0; padding-left: 24px; }
@@ -86,7 +86,7 @@ video.is-ready { display: block; }
   .help-dialog { width: calc(100% - 16px); max-height: calc(100dvh - 16px); border-radius: 18px; }
   .dialog-card { padding: 22px 14px 14px; }
   .dialog-copy { padding-right: 38px; }
-  .video-wrap { width: min(100%, 430px); min-height: 0; justify-self: center; margin-inline: auto; border-radius: 14px; }
+  .video-wrap { width: min(100%, 430px); min-height: 0; justify-self: center; margin-left: auto; margin-right: auto; border-radius: 14px; }
   video { width: 100%; height: auto; min-height: 0; max-height: 78dvh; aspect-ratio: 9 / 16; object-fit: contain; }
   .video-placeholder { min-height: 62dvh; }
   .footer-inner { flex-direction: column; gap: 6px; }
