@@ -144,6 +144,8 @@ const descriptionElement = document.getElementById("dialogDescription");
 const stepsElement = document.getElementById("dialogSteps");
 const video = document.getElementById("instructionVideo");
 const placeholder = document.getElementById("videoPlaceholder");
+const placeholderTitle = document.getElementById("videoPlaceholderTitle");
+const placeholderText = document.getElementById("videoPlaceholderText");
 const helpGrid = document.getElementById("helpGrid");
 
 function createTile(item) {
@@ -188,6 +190,8 @@ function openInstruction(item) {
 
   video.classList.remove("is-ready");
   placeholder.classList.remove("is-hidden");
+  placeholderTitle.textContent = item.video ? "Video laden…" : "Geen video";
+  placeholderText.textContent = item.video ? "Even geduld." : "Voor deze instructie is nog geen video toegevoegd.";
 
   video.pause();
   video.removeAttribute("src");
@@ -209,6 +213,8 @@ video.addEventListener("loadedmetadata", () => {
 video.addEventListener("error", () => {
   video.classList.remove("is-ready");
   placeholder.classList.remove("is-hidden");
+  placeholderTitle.textContent = "Video niet beschikbaar";
+  placeholderText.textContent = "De video kon niet worden geladen.";
 });
 
 function closeDialog() {
