@@ -40,7 +40,7 @@ const helpItems = [
     description: "Controleer of alle producten volledig in de mal zitten.",
     shortText: "Een startvoorwaarde blokkeert de cyclus.",
     steps: ["Controleer of alle producten aanwezig zijn.", "Controleer of de goede onderdelen aanwezig zijn.", "Duw de producten aan", "Druk daarna opnieuw op START."],
-    video: "videos/rode-lamp-start.mp4",
+    video: "videos/Rode%20lamp%20start.mp4",
     icon: "!"
   },
   {
