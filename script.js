@@ -6,8 +6,8 @@ const helpItems = [
     duration: "< 1 minuut",
     description: "Stopfe vastgelopen tijdens de cyclus.",
     shortText: "Stopfe vastgelopen tijdens de cyclus.",
-    steps: ["Controleer de melding op het HMI.", "Controleer de productpositie.", "Voer daarna de normale herstelstap uit."],
-    video: "videos/stopfe-timeout.mp4",
+    steps: ["Druk op Error reset.", "Controleer: Machine run staat UIT.", "Open de veiligheidsdeur.", "Verwijder ALLE stopfe uit de triltrommelbaan.", "BELANGRIJK: Controleer zorgvuldig of geen stopfe diep in de goot vastzitten.", "Sluit de veiligheidsdeur.", "Druk op de blauwe knop. Druk daarna op Error reset.", "Druk op Start."],
+    video: "videos/Stopfe%20timeout.mp4",
     icon: "!"
   },
   {
@@ -17,8 +17,8 @@ const helpItems = [
     duration: "< 1 minuut",
     description: "De machine deuren zijn niet gesloten of niet vrijgegeven.",
     shortText: "De machine deuren zijn niet gesloten of niet vrijgegeven.",
-    steps: ["Controleer alle deuren.", "Controleer of niets de sluiting blokkeert.", "Reset daarna volgens de normale procedure."],
-    video: "videos/veiligheidshek-open.mp4",
+    steps: ["Sluit de veiligheidsdeur.", "Druk op de blauwe knop.", "Druk op Error reset.", "Druk op Start."],
+    video: "videos/Veiligheidsdeur%20open.mp4",
     icon: "⌑"
   },
   {
@@ -28,8 +28,8 @@ const helpItems = [
     duration: "1–2 minuten",
     description: "Deursensoren zijn in error",
     shortText: "Deursensoren zijn in error",
-    steps: ["Lees de melding op het HMI.", "Controleer of de deuren gesloten zijn.", "Reset daarna volgens de normale procedure."],
-    video: "videos/veiligheidsloop-inconsistent.mp4",
+    steps: ["Druk op Error reset.", "Druk op de blauwe knop.", "Druk opnieuw op Error reset.", "Druk op Start."],
+    video: "videos/Veiligheidsdeur%20inconsistent.mp4",
     icon: "∞"
   },
   {
@@ -39,7 +39,7 @@ const helpItems = [
     duration: "< 1 minuut",
     description: "Controleer of alle producten volledig in de mal zitten.",
     shortText: "Een startvoorwaarde blokkeert de cyclus.",
-    steps: ["Controleer of alle producten aanwezig zijn.", "Controleer of de goede onderdelen aanwezig zijn.", "Duw de producten aan", "Druk daarna opnieuw op START."],
+    steps: ["Controleer of de juiste onderdelen aanwezig zijn.", "Controleer of alle onderdelen volledig in de mal zitten.", "Druk opnieuw op Start."],
     video: "videos/Rode%20lamp%20start.mp4",
     icon: "!"
   },
@@ -50,7 +50,7 @@ const helpItems = [
     duration: "2–5 minuten",
     description: "Stapsgewijs de machine opstarten.",
     shortText: "Stapsgewijs de machine opstarten.",
-    steps: ["Controleer de machineomgeving.", "Schakel de hoofdschakelaar in.", "Wacht een minuut", "Druk op de blauwe deur knop","MEER STAPPEN"],
+    steps: ["Open de veiligheidsdeur.", "Zet de lastschakelaar AAN.", "Sluit de veiligheidsdeur.", "Wacht enkele minuten tot de machine is opgestart.", "Druk op de blauwe knop.", "Druk op Error reset.", "Druk op Autocyclus.", "Houd Start ingedrukt totdat de robot stopt met bewegen.", "Druk op Autocyclus.", "Druk op Start."],
     video: "videos/Turn%20on%20machine.mp4",
     icon: "▶"
   },
@@ -61,7 +61,7 @@ const helpItems = [
     duration: "2–5 minuten",
     description: "Machine gecontroleerd afsluiten.",
     shortText: "Machine gecontroleerd afsluiten.",
-    steps: ["Maak de cyclus af.", "Breng de machine naar de juiste eindtoestand.", "Schakel systemen uit volgens de procedure."],
+    steps: ["Wacht totdat de machine de cyclus heeft voltooid.", "Druk op Stop.", "Open de veiligheidsdeur.", "Zet de lastschakelaar UIT."],
     video: "videos/Turn%20off%20machine.mp4",
     icon: "■"
   },
@@ -72,8 +72,8 @@ const helpItems = [
     duration: "1–2 minuten",
     description: "Stopfe veilig bijvullen.",
     shortText: "Stopfe veilig bijvullen.",
-    steps: ["Controleer het huidige niveau.", "Vul bij volgens de afgesproken werkwijze.", "Controleer daarna de aanvoer."],
-    video: "videos/stopfe-bijvullen.mp4",
+    steps: ["Zet de afvalkar onder de stopfe-opening.", "Pak de krat met stopfe.", "Zet de krat op de afvalkar.", "Vul de machine MET DE HAND.", "BELANGRIJK: Gebruik GEEN schep.", "Vul tot de vulindicatie."],
+    video: "videos/Stopfe%20vullen.mp4",
     icon: "+"
   },
   {
@@ -83,8 +83,8 @@ const helpItems = [
     duration: "< 1 minuut",
     description: "De tray op een veilige juiste wijze terug zetten",
     shortText: "Een tray is doorgeschoten.",
-    steps: ["Gebruik twee trays volgens de instructie.", "Controleer de positie.", "Ga pas verder als beide correct staan."],
-    video: "videos/twee-trays-vullen.mp4",
+    steps: ["Vul de tweede tray.", "Pak de tweede tray op.", "Leg de tray voorzichtig neer achter de normale vulpositie."],
+    video: "videos/Double%20tray.mp4",
     icon: "▣"
   },
   {
@@ -94,8 +94,8 @@ const helpItems = [
     duration: "1–2 minuten",
     description: "Afvalkrat legen en opnieuw vrijgeven.",
     shortText: "Afvalkrat legen en opnieuw vrijgeven.",
-    steps: ["Stop volgens de normale procedure.", "Leeg of vervang de afvalkrat.", "Controleer de detectie.", "Start daarna opnieuw."],
-    video: "videos/afvalkrat-vol.mp4",
+    steps: ["Verwijder de volle krat.", "Plaats een nieuwe rode krat.", "Druk op OK."],
+    video: "videos/Afvalbak%20vol.mp4",
     icon: "⌫"
   },
   {
@@ -105,8 +105,8 @@ const helpItems = [
     duration: "1–3 minuten",
     description: "Algemene systeemfout.",
     shortText: "Algemene systeemfout.",
-    steps: ["Lees de volledige foutmelding.", "Noteer eventueel de foutcode.", "Voer alleen de toegestane herstelstappen uit."],
-    video: "videos/system-fout.mp4",
+    steps: ["Bij elke systeemfout \"X\" is een herstart vereist.", "Volg de instructie ‘Afsluiten guide’.", "Volg daarna de instructie ‘Opstart guide’."],
+    video: "",
     icon: "⚙"
   },
   {
@@ -116,8 +116,8 @@ const helpItems = [
     duration: "2–5 minuten",
     description: "Bij elke 10x opstarten is callibratie vereist.",
     shortText: "Systeem vraagt om calibratie.",
-    steps: ["Controleer welk onderdeel calibratie vraagt.", "Volg de calibratiestappen op het HMI.", "Controleer het resultaat voordat de productie wordt hervat."],
-    video: "videos/calibratie-nodig.mp4",
+    steps: ["De machine vraagt na elke 10 opstarts om calibratie.", "Druk op Automatisch calibreren.", "Kies NEE in de pop-up.", "Houd Start ingedrukt totdat de robot stopt.", "Druk op Error reset.", "Druk op Autorun.", "Houd Start ingedrukt totdat de robot stilstaat.", "Druk op Autorun.", "Druk op Start."],
+    video: "",
     icon: "◎"
   }
 
