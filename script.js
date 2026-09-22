@@ -51,7 +51,7 @@ const helpItems = [
     description: "Stapsgewijs de machine opstarten.",
     shortText: "Stapsgewijs de machine opstarten.",
     steps: ["Controleer de machineomgeving.", "Schakel de hoofdschakelaar in.", "Wacht een minuut", "Druk op de blauwe deur knop","MEER STAPPEN"],
-    video: "videos/opstart-guide.mp4",
+    video: "videos/Turn%20on%20machine.mp4",
     icon: "▶"
   },
   {
