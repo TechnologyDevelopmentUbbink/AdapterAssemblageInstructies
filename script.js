@@ -62,7 +62,7 @@ const helpItems = [
     description: "Machine gecontroleerd afsluiten.",
     shortText: "Machine gecontroleerd afsluiten.",
     steps: ["Maak de cyclus af.", "Breng de machine naar de juiste eindtoestand.", "Schakel systemen uit volgens de procedure."],
-    video: "videos/afsluiten-guide.mp4",
+    video: "videos/Turn%20off%20machine.mp4",
     icon: "■"
   },
   {
